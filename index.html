@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+            <section id="time" class="timer_display">10:00</section>
+            <h2 id="winner_msg"></h2>
+        <main class="scoreboard">
+            <section>
+                <div class="data">
+                    <h3 id="home_highlight">HOME</h3>
+                    <h2 id="home_score" class="score_board">0</h2>
+                </div>
+                <div class="add_number">
+                    <button onclick="updateScore('home', 1)">+1</button>
+                    <button onclick="updateScore('home', 2)">+2</button>
+                    <button onclick="updateScore('home', 3)">+3</button>
+                </div>
+            </section>
+            <div class="new_game_container">
+                <button id="new_game" onclick="newGame()">New Game</button>
+            </div>
+            <div class="pause_game_container">
+                <button id="pause_game" onclick="pauseGame()">Pause Game</button>
+            </div>
+
+            <section>
+                <div class="data">
+                    <h3 id="guest_highlight">GUEST</h3>
+                    <h2 id="guest_score" class="score_board">0</h2>
+                </div>
+                <div class="add_number">
+                    <button onclick="updateScore('guest', 1)">+1</button>
+                    <button onclick="updateScore('guest', 2)">+2</button>
+                    <button onclick="updateScore('guest', 3)">+3</button>
+                </div>
+            </section>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

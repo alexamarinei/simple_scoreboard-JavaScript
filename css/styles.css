@@ -1,0 +1,83 @@
+body {
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1B244A;
+    width: 600px;
+    height: auto;
+}
+
+.scoreboard,
+#winner_msg {
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.score_board {
+    background-color: #080001;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #F94F6D;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    border-radius: 5px;
+}
+
+.add_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0;
+}
+
+.add_number button {
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.new_game_container {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#new_game, #pause_game {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    background-color: #F94F6D;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#new_game:hover, #pause_game:hover {
+    background-color: #D93C59;
+}
+
+.timer_display {
+    font-size: 60px;
+    margin: 20px auto; 
+    text-align:center;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #F94F6D;
+}
